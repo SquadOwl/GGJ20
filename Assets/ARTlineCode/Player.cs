@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     private Life life;
     private Vector3 moveVector;
     private CharacterController characterController;
+    private AttackItem attackItem = new Gun();
+    private SupportItem supportItem = new Repair();
 
     // Start is called before the first frame update
     void Start()
@@ -42,12 +44,15 @@ public class Player : MonoBehaviour
 
     private void Repair ()
     {
-        Debug.Log("I repair");
+        Debug.Log("I use support");
+        supportItem.Action();
     }
 
     private void Attack()
     {
+
         Debug.Log("I attack");
+        attackItem.Attack();
     }
 
 }
