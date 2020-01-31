@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/ARTlineCode.meta
 guid: 9705477c62a2c97418514f1704647239
+=======
+guid: a232d37b6bb6bc945b0c5c0fbc12dc03
+>>>>>>> 7dbd18194895abe4cdc2ffbc559aebcc4983a682:Assets/Code.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

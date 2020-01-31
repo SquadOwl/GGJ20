@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class Life : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float health;
+
+    public Life(float baseHealth)
     {
-        
+        health = baseHealth;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Damaged(float damage)
     {
-        
+        health -= damage;
     }
+
+
+    //// Start is called before the first frame update
+    //void Start()
+    //{
+        
+    //}
+
+    //// Update is called once per frame
+    //void Update()
+    //{
+        
+    //}
 }

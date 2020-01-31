@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    
     public float moveSpeed;
+    public float baseHealth;
+    public float damage;
 
+    private Life life;
     private Vector3 moveVector;
     private CharacterController characterController;
 
@@ -13,6 +17,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        life = new Life(baseHealth);
     }
 
     private void FixedUpdate()
@@ -37,12 +42,12 @@ public class Player : MonoBehaviour
 
     private void Repair ()
     {
-
+        Debug.Log("I repair");
     }
 
     private void Attack()
     {
-
+        Debug.Log("I attack");
     }
 
 }

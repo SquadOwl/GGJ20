@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/ARTlineCode/New Material.mat.meta
 guid: 3e5ad115f753f7d48b8cc46ea29ec33d
 NativeFormatImporter:
+=======
+guid: 9577a51548e048941bc01191aebd9d38
+folderAsset: yes
+DefaultImporter:
+>>>>>>> 7dbd18194895abe4cdc2ffbc559aebcc4983a682:Assets/Images.meta
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 

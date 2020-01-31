@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Script: {fileID: -2067402452, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AS6szG3/////AAABmdhq821ye0RqlUsJV2CjgrGD1d0Cn8tnvvSH4Y6pDDFTBDbjprjJ/tv84OMSa/9IENEdTGAGUWmd94dpjhZWCq5B8cnHzLpRm0fdmNQ2i8hobdpwUU++pfq0Hq70cKreVoPeEDDj0o9oAmgX0CrFGEBoprOc+IBjl5cFkeKEiYlXVrmOQp/2lRPBzjpsVMnQw7C6LXd1PGOpgB5vBK07y+X/ZnPwU6mTvmHuBsGarxo26NL31hJEBrkMmgOpJ14XdyVAayjoEhrX6gFIzQ+nSERk+cgXCQdTH9U36TeiYH5zk9sfVEJUeCM2A6SEIDIzFLksjAwG/DV290XX3+f/Li21Cmo87dn1LQ5ap6ePwHaG
-    ufoLicenseKey: QVkrdDllai8vLy8vQUFBQUtJeGxRYkZpcVVqL21rZE9KWTArRUFrWHdIYTFncW9DQ3ZsdTh3TUl6T0phQldPNk1tbitIOGhMNjdpNTBQUWl4MWJrQzJlVEE1bHUyY0h0MldBd1hCRXkxSHBGRlpDN3FwUDVaaGwwSVJUc2ozTDliZEZ2aG1RQ3U3S3l1bE4xUi9wODZMQTM1QVVuQzNNQjUxc2l5ZEpTWlFPM1U4Yitkb2JLT1htTk12TUdQVlBGSmdHUHNjUGxGdC9acWRXaFFLcVB3RzRiOG9BNUhyZGxtN1dzSE9qWjZlN3ZVMGpuT1FVemdoMGFjZUlMRk5HTFU1U0d1OExCb04xbzZ2RmFrdWg3UVhETlVUNDJHa01ZTWZEYkgzS2xDV2xOWEN0a0RVZEFvd3RzbWx0a1NRYlBNVy8rRE42UW0vSm12V3J1YklMVmNzZUo3cEszWUxEQ3RDcG5weGEzeDkyMC9ka1Nvdm8xcjYxc0N1TnQ=
+    ufoLicenseKey: QVNZV0cxWC8vLy8vQUFBQUtPN000M3ZYblVhd3IvODYwL2xRQ1dnT0xYN3ZWTUE0VDRqbnd4aUtvTG5TeWgydS83Q3pMaExYQkNkTUZ4cXBtTVluRWo5Y0xqaWtnNEQvc2lBUkZOSngxbUdmQlA2cVNId055ZWVGd0loRkFtS3JkVmlYbkFOUExwR3c3M0tmaWtxRnQxZmkrajJPanVPNmZQMUJLUjRGNHFvM3BDc0FvMi95Y3lwaDZhYVFkOVlISFN5TmI2WExqS0VLcXU3RmU1b1Z3NFVrUTdQTWV3YXBTRndPS3NteTYrekRXOWM5MmxCbkh2WTdvWVlUdmpSRWd1emEvSG14MkZacHFTVWlVNFhablZzSUluM0UrTkoxS2RSd0F6ejdMS29OMk5yTFBQNzF0OFhlS0tJN1d0UmpIQmZGZk5LVEp0VHM4T1c0OWJOVzVSQStMZ3kzeVREcHVlWjRHMDliQVQ2d29Nc29vMmtsL1l4eit3OHY=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
+    maxSimultaneousImageTargets: 4
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
@@ -45,13 +45,13 @@ MonoBehaviour:
       FieldOfView: {x: 0, y: 0, z: 0, w: 0}
       ContainsMagnet: 0
   database:
-    disableModelExtraction: 0
+    disableModelExtraction: 1
   videoBackground:
     clippingMode: 0
     numDivisions: 2
     videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
       type: 3}
-    matteShader: {fileID: 4800000, guid: 66d0d78a3000021448b598bb54a3bfdf, type: 3}
+    matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
     autoInitTracker: 0
@@ -66,6 +66,6 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: 
+    deviceNameSetInEditor: USB Camera
     turnOffWebCam: 0
     renderTextureLayer: 30
