@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - singlePlayerBtn
+  - multiplayerBtn
+  - createRoomUser1Btn
+  - createRoomUser2Btn
+  - createRoomUser3Btn
+  - createRoomUser4Btn
+  - createRoomUser5Btn
+  - createRoomUser6Btn
+  - unableUserImg
+  - enableUserImg
   layers:
   - Default
   - TransparentFX
