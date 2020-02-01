@@ -5,38 +5,30 @@ using UnityEngine;
 public class CameraLook : MonoBehaviour
 {
     GameObject camera;
-    //// Start is called before the first frame update
-    //void Start()
-    //{
-
-
-    //    camera = GameObject.FindGameObjectWithTag("MainCamera");
-    //}
-
-    //// Update is called once per frame
-    //void Update()
-    //{
-
-    //    //  transform.LookAt(new Vector3(0, camera.transform.position.x, 0));
-    //    //  camera.transform.LookAt(new Vector3(0,camera.transform.position.x,0));
-
-    //    transform.LookAt(new Vector3(camera.transform.position.y,0,0));
-    //}
-
-
-    public double dx;
-    public double dy;
-
-    // Use this for initialization
+    GameObject image;
+    // Start is called before the first frame update
     void Start()
     {
+
+
         camera = GameObject.FindGameObjectWithTag("MainCamera");
+        image = GameObject.FindGameObjectWithTag("Target");
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        transform.Rotate(new Vector3(0, 0, 5));
+        //  transform.LookAt(new Vector3(0, camera.transform.position.x, 0));
+        //  camera.transform.LookAt(new Vector3(0,camera.transform.position.x,0));
+
+        // transform.LookAt(new Vector3(10, image.transform.position.y, image.transform.position.z));
+   
+       // Vector3 newDir = Vector3.RotateTowards(transform.forward, (camera.transform.position - transform.position),2f, 0.0F);
+      //  transform.rotation = Quaternion.LookRotation(newDir);
+        transform.Rotate(new Vector3(0, 5, 0));
     }
+
+
+
 }
