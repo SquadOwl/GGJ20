@@ -27,7 +27,15 @@ public class WaitRoom : MonoBehaviour
     void Update()
     {
         if (true)
-            loadingIcon.transform.Rotate((new Vector3(0, 0, -1)), 5);
+        {
+            loadingIcon.transform.Rotate(Vector3.back * 50 * Time.deltaTime, 5);
+            //loadingIcon.transform.Rotate(0, 0, Time.deltaTime * -200);
+            //var desiredRotQ = Quaternion.Euler(Vector3.back);
+            //loadingIcon.transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.deltaTime * 50);
+            //loadingIcon.transform.Rotate(Vector3.back * 300 * Time.deltaTime);
+        }
+
+
         else
             SceneManager.LoadScene("GameScene");
     }

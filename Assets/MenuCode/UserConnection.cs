@@ -39,7 +39,7 @@ public class UserConnection : MonoBehaviour
 
         else
         {
-            loadingIcon.transform.Rotate((new Vector3(0, 0, -1)), 5);
+            loadingIcon.transform.Rotate(Vector3.back * 50 * Time.deltaTime, 5);
             timeLeft -= Time.deltaTime;
         }
     }

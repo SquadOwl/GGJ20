@@ -194,9 +194,10 @@ GameObject:
   - component: {fileID: 33479151}
   - component: {fileID: 33479150}
   - component: {fileID: 33479149}
+  - component: {fileID: 33479153}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: mainCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -286,6 +287,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &33479153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33479148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90403d87d377b04e8f75684a8478e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundSlider: {fileID: 1677887712}
+  volumeSlider: {fileID: 2080359842}
 --- !u!1 &80765159
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.84}
   m_AnchorMax: {x: 0.5, y: 0.83}
-  m_AnchoredPosition: {x: 94, y: 205}
+  m_AnchoredPosition: {x: 110, y: 205}
   m_SizeDelta: {x: 86.87, y: 105.33003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &111467042
@@ -653,7 +668,7 @@ RectTransform:
   m_GameObject: {fileID: 120121347}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.67502457}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 905803667}
   m_RootOrder: 0
@@ -676,7 +691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.36078432, g: 0.3882353, b: 0.41568628, a: 1}
+  m_Color: {r: 0.44833574, g: 0.5307717, b: 0.6132076, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -876,6 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acbde06c0f1de2545984a985d190d938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
 --- !u!1 &333376384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,7 +2271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.5, b: 1, a: 1}
+  m_Color: {r: 0.21226418, g: 0.6076766, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2997,7 +3013,7 @@ RectTransform:
   m_GameObject: {fileID: 1059638784}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.67502457}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 111467041}
   m_RootOrder: 0

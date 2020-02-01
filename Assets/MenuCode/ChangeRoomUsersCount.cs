@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Unity.PackageManager;
 
 public class ChangeRoomUsersCount : MonoBehaviour
 {
     Button[] buttons;
+    public GameObject canvas;
     // Start is called before the first frame update
     void Start()
     {
+        var script = canvas.GetComponent<ScriptableObject>();
         buttons = this.GetComponentsInChildren<Button>();
         var wholeImgArr = new List<object>();
 

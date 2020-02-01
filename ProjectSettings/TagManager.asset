@@ -14,6 +14,7 @@ TagManager:
   - createRoomUser6Btn
   - unableUserImg
   - enableUserImg
+  - mainCanvas
   layers:
   - Default
   - TransparentFX
