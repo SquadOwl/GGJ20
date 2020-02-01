@@ -7,26 +7,28 @@ public class MyNet : NetworkDiscovery
 {
     public override void OnReceivedBroadcast(string fromAddress, string data)
     {
+        NetworkManager.singleton.networkAddress = fromAddress;
+        NetworkManager.singleton.StartClient();
         Debug.Log("Received broadcast from: " + fromAddress + " with the data: " + data);
     }
     
-
-    public void Init()
-    {
-        Initialize();
-    }
-
+    
     public void StartServer()
     {
-        StartAsServer();
-        Debug.Log("StartAsServer at port: " + this.broadcastPort + " and Address: " + IPManager.GetIP(ADDRESSFAM.IPv4));
+        NetworkManager.singleton.networkAddress = IPManager.GetIP(ADDRESSFAM.IPv4);
+        Initialize();
+        bool state = StartAsServer();
+
+        Debug.Log("Server state:" +state+ "\nAt port: " + broadcastPort + " and Address: " + NetworkManager.singleton.networkAddress);
     }
+
 
     public void StartClient()
     {
-        
-        StartAsClient();
-        Debug.Log("StartAsClient at port: " + this.broadcastPort + " and Address: " + IPManager.GetIP(ADDRESSFAM.IPv4));
+
+        Initialize();
+        bool state = StartAsClient();
+        Debug.Log("Client state:" + state + "\nAt port: " + broadcastPort + " and Address: " + NetworkManager.singleton.networkAddress);
     }
 
     public void StopCast()
@@ -35,15 +37,5 @@ public class MyNet : NetworkDiscovery
         Debug.Log("Stop broadcast");
     }
 
-    public void Update()
-    {
-        if(broadcastsReceived != null)
-        {
-
-            foreach (var item in broadcastsReceived)
-            {
-                Debug.Log("Key: " + item.Key + " Address: " + item.Value.serverAddress);
-            }
-        }
-    }
+    
 }
