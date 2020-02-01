@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 18
-  productGUID: 00000000000000000000000000000000
+  productGUID: 3d2e2c1b8cf02b945b932f7f9e275338
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -922,7 +922,7 @@ PlayerSettings:
   apiCompatibilityLevel: 3
   cloudProjectId: bed5f315-8acb-4f29-a87b-459cb93007bb
   framebufferDepthMemorylessMode: 0
-  projectName: 
+  projectName: GGJ20 (2)
   organizationId: drift2020
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
