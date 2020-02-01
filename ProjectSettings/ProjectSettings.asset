@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 18
-  productGUID: 00000000000000000000000000000000
+  productGUID: 0e6c4d082d5816a4d9096fdc0c8ddc6b
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -505,6 +505,8 @@ PlayerSettings:
   - m_BuildTarget: iOS
     m_Enabled: 1
   - m_BuildTarget: Metro
+    m_Enabled: 1
+  - m_BuildTarget: Standalone
     m_Enabled: 1
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
