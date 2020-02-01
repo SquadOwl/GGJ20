@@ -1,12 +1,8 @@
 fileFormatVersion: 2
-guid: e5f6ae29cc82de842b6fd90d564162de
+guid: e3f93a15e45a7c64bb63da1b3d351a67
 TextureImporter:
   fileIDToRecycleName:
-    21300000: port_0
-    21300002: port_1
-    21300004: port_2
-    21300006: port_3
-    21300008: port_4
+    21300000: port1_0
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -51,7 +47,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 312, y: 347, z: 581, w: 346}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -100,101 +96,21 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: port_0
+      name: port1_0
       rect:
         serializedVersion: 2
-        x: 424
-        y: 348
-        width: 119
-        height: 290
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0732cfb717ef7784d88424762f899958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: port_1
-      rect:
-        serializedVersion: 2
-        x: 566
+        x: 312
         y: 346
-        width: 112
-        height: 307
+        width: 107
+        height: 305
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e641daa137dd29043a8c5d8249480ec6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: port_2
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 654
-        width: 140
-        height: 105
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f6ab0d0c48693a4ba36935c990f037d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: port_3
-      rect:
-        serializedVersion: 2
-        x: 315
-        y: 348
-        width: 106
-        height: 306
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1b7a3aee041bf84bae324c401817268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: port_4
-      rect:
-        serializedVersion: 2
-        x: 423
-        y: 237
-        width: 142
-        height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d13031e07b78664e82d728a630b667a
+      spriteID: 3f8690150b5567e46989e36d9dffd785
       vertices: []
       indices: 
       edges: []
@@ -202,7 +118,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9324e6b5d08793e49b0678d97b124d64
+    spriteID: 8fa140def9dde364f9ca5df14b9cdddc
     vertices: []
     indices: 
     edges: []
