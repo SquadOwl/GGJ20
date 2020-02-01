@@ -1,7 +1,9 @@
 fileFormatVersion: 2
 guid: 70ebfb9dbb0277043b4bf4e7632f024d
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: krug_0
+    21300002: krug_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +71,95 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: krug_0
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 368
+        width: 370
+        height: 393
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -108, y: 135.5}
+        - {x: -157, y: 60.5}
+        - {x: -164, y: -15.5}
+        - {x: -144, y: -84.5}
+        - {x: -104, y: -131.5}
+        - {x: -62, y: -158.5}
+        - {x: -50, y: -183.5}
+        - {x: 46, y: -184.5}
+        - {x: 91, y: -152.5}
+        - {x: 153, y: -105.5}
+        - {x: 181, y: -37.5}
+        - {x: 181, y: 46.5}
+        - {x: 160, y: 94.5}
+        - {x: 137, y: 121.5}
+        - {x: 83, y: 163.5}
+        - {x: 19, y: 178.5}
+        - {x: -35, y: 173.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d0140f0b5dcb24eaa06fa839917f97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: krug_1
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 29
+        width: 208
+        height: 1078
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -104, y: 539}
+        - {x: -104, y: 68}
+        - {x: -104, y: -539}
+        - {x: 101, y: -539}
+        - {x: 102, y: -538}
+        - {x: 102, y: 538}
+        - {x: 101, y: 539}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340ca9bba2ff81f40b932c92a680341e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
