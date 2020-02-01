@@ -506,8 +506,6 @@ PlayerSettings:
     m_Enabled: 1
   - m_BuildTarget: Metro
     m_Enabled: 1
-  - m_BuildTarget: Standalone
-    m_Enabled: 1
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   m_TemplateCustomTags: {}
