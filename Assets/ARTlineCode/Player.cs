@@ -7,39 +7,42 @@ public class Player : MonoBehaviour
     
     public float moveSpeed;
     public float baseHealth;
-    public float damage;
 
     private Life life;
     private Vector3 moveVector;
-    private CharacterController characterController;
+    //private CharacterController characterController;
     private AttackItem attackItem = new Gun();
     private SupportItem supportItem = new Repair();
+    private Control control;
 
     // Start is called before the first frame update
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        //characterController = GetComponent<CharacterController>();
         life = new Life(baseHealth);
+        control = new ControlTouch(GetComponent<Rigidbody>(), moveSpeed);
     }
 
-    private void FixedUpdate()
-    {
-        //Move();
-    }
 
     // Update is called once per frame
-    void Update()
+    //void Update()
+    //{
+    //    Move();
+    //}
+
+    public void MoveHorizontal(int InputAxis)
     {
-        Move();
+        control.MoveDiagonal(InputAxis);
     }
 
-    private void Move()
+        public void MoveVertical(int InputAxis)
     {
-        moveVector = Vector3.zero;
-        moveVector.x = Input.GetAxis("Horizontal") * moveSpeed;
-        moveVector.z = Input.GetAxis("Vertical") * moveSpeed;
+        control.MoveVertical(InputAxis);
+    }
 
-        characterController.Move(moveVector * Time.deltaTime);
+    void FixedUpdate()
+    {
+        control.MoveUpdate();
     }
 
     private void Repair ()
