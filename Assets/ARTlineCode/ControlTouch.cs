@@ -31,6 +31,23 @@ public class ControlTouch : Control
 
     }
 
+    //public override void MoveUp(int InputAxis)
+    //{
+    //    directionInputVertical = InputAxis;
+    //}
+    //public override void MoveDown(int InputAxis)
+    //{
+    //    directionInputVertical = InputAxis;
+    //}
+    //public override void MoveLeft(int InputAxis)
+    //{
+    //    directionInputHorizontal = InputAxis;
+    //}
+    //public override void MoveRight(int InputAxis)
+    //{
+    //    directionInputHorizontal = InputAxis;
+    //}
+
     public override void MoveDiagonal(int InputAxis)
     {
 

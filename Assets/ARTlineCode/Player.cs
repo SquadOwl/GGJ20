@@ -45,15 +45,14 @@ public class Player : MonoBehaviour
         control.MoveUpdate();
     }
 
-    private void Repair ()
+    public void Repair()
     {
         Debug.Log("I use support");
         supportItem.Action();
     }
 
-    private void Attack()
+    public void Attack()
     {
-
         Debug.Log("I attack");
         attackItem.Attack();
     }
