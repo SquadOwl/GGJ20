@@ -201,6 +201,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 934170477, guid: 7b0d28ea7233fc54aaace984fe935e92, type: 3}
+      propertyPath: m_UseNetworkManager
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 106348190168571168, guid: 7b0d28ea7233fc54aaace984fe935e92,
         type: 3}
       propertyPath: m_LocalPosition.x

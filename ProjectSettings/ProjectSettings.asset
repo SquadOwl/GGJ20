@@ -902,7 +902,8 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    UNet: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -922,10 +923,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 3
-  cloudProjectId: bed5f315-8acb-4f29-a87b-459cb93007bb
+  cloudProjectId: e30d506b-2986-444e-8dcf-c7c5b32e1282
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: drift2020
+  projectName: GGJ20
+  organizationId: eboot
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

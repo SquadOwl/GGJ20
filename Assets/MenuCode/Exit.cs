@@ -11,7 +11,7 @@ public class Exit : MonoBehaviour
     {
         (GetComponent<Button>()).onClick.AddListener(delegate {
 
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
             //Application.Quit();
 
         });
