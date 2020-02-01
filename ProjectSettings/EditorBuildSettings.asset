@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SamplesResources/Scenes/3-VuMarks.unity
     guid: d9b53b25a285640cf8ac170a80603e34
+  - enabled: 1
+    path: Assets/Scenes/Network.unity
+    guid: 75769fafd4d1f76479ce10a11607e1cf
   m_configObjects: {}
