@@ -31,8 +31,11 @@ public class Support : MonoBehaviour
             Debug.Log(otherCol.name + " Heal");
 
             SpriteRenderer f = new SpriteRenderer();
-           
-            otherCol.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color= Color.green;
+           int size =  otherCol.gameObject.transform.GetChildCount()-1;
+            for (int i = 0; i < size; i++)
+            {
+                otherCol.gameObject.transform.GetChild(i).GetComponent<SpriteRenderer>().color = Color.green;
+            }
             otherCol.gameObject.GetComponent<Renderer>().material.color = Color.green;
 
            // otherCol.gameObject.GetComponentInParent<GameObject>().active=true;
