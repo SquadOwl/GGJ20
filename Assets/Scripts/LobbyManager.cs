@@ -8,7 +8,7 @@ public class LobbyManager : MonoBehaviour
 {
     public void CreateLobby()
     {
-        NetworkLobbyManager.singleton.networkAddress = "192.168.0.0";
+        NetworkLobbyManager.singleton.networkAddress = "192.168.0.117";
         NetworkLobbyManager.singleton.maxConnections = 6;
         NetworkLobbyManager.singleton.StartHost();
         Debug.Log(NetworkLobbyManager.singleton.networkPort);

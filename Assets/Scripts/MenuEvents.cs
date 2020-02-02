@@ -9,4 +9,7 @@ public class MenuEvents : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+
+    
 }
