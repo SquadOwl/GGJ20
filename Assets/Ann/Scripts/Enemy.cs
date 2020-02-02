@@ -12,16 +12,16 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        type = 2;
+        type = 1;
            life = new Life(1.0f);
         if (type == 1)
         {
             control = new ObjectControl(transform);
         }
-        else if (type == 2)
-        {
-            control = new PlayerControl(GetComponent<NavMeshAgent>(), transform);
-        }
+        //else if (type == 2)
+        //{
+        //    control = new PlayerControl(GetComponent<NavMeshAgent>(), transform);
+        //}
     }
 
 

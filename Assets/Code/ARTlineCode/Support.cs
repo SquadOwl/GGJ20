@@ -29,7 +29,13 @@ public class Support : MonoBehaviour
         if (otherCol != null)
         {
             Debug.Log(otherCol.name + " Heal");
+
+            SpriteRenderer f = new SpriteRenderer();
+           
+            otherCol.gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().color= Color.green;
             otherCol.gameObject.GetComponent<Renderer>().material.color = Color.green;
+
+           // otherCol.gameObject.GetComponentInParent<GameObject>().active=true;
         }
     }
 
@@ -39,16 +45,16 @@ public class Support : MonoBehaviour
         switch (dir)
         {
             case 0:
-                transform.localPosition = new Vector3(0, 0, 1);
+                transform.localPosition = new Vector3(0, -0.2f, 1);
                 break;
             case 1:
-                transform.localPosition = new Vector3(0, 0, -1);
+                transform.localPosition = new Vector3(0, -0.2f, -1);
                 break;
             case 2:
-                transform.localPosition = new Vector3(-1, 0, 0);
+                transform.localPosition = new Vector3(-1, -0.2f, 0);
                 break;
             case 3:
-                transform.localPosition = new Vector3(1, 0, 0);
+                transform.localPosition = new Vector3(1, -0.2f, 0);
                 break;
 
             default:

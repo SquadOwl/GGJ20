@@ -11,6 +11,8 @@ public class ControlTouch : Control
     public int directionInputHorizontal;
     public bool facingRight = true;
 
+   
+
     public ControlTouch(Transform curTr, Rigidbody curRb, float curSpeed )
     {
         tr = curTr;
