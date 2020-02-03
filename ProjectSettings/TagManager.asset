@@ -7,6 +7,7 @@ TagManager:
   - Exit_is
   - Terrain
   - Build
+  - Wall
   layers:
   - Default
   - TransparentFX
