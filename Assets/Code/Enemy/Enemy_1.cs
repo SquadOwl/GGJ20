@@ -47,17 +47,18 @@ namespace Sasha
 
             //Vector3 dir = Vector3.forward * Time.deltaTime * speed;
 
-         
 
-            if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y- y_coord, transform.position.z), Line_rotate, distance))
+            if (gameObject.GetComponent<MeshRenderer>().enabled)
             {
-                print("There is something in front of the object!");
-                   dir =  ChangeMove();
-               // dir = ChangeMoveRandom();
+                if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y - y_coord, transform.position.z), Line_rotate, distance))
+                {
+                    print("There is something in front of the object!");
+                    dir = ChangeMove();
+                    // dir = ChangeMoveRandom();
 
+                }
+                Move_to_Object();
             }
-            Move_to_Object();
-           
         }
 
         Vector3 ChangeMoveRandom()

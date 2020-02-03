@@ -6,6 +6,7 @@ enum Direction { UP,DOWN,LEFT,RIGHT};
 
 public class Support : MonoBehaviour
 {
+    public int heal;
     Collider otherCol;
 
     private void Start()
@@ -30,13 +31,15 @@ public class Support : MonoBehaviour
         {
             Debug.Log(otherCol.name + " Heal");
 
-            SpriteRenderer f = new SpriteRenderer();
-           int size =  otherCol.gameObject.transform.GetChildCount()-1;
-            for (int i = 0; i < size; i++)
-            {
-                otherCol.gameObject.transform.GetChild(i).GetComponent<SpriteRenderer>().color = Color.green;
-            }
-            otherCol.gameObject.GetComponent<Renderer>().material.color = Color.green;
+            otherCol.gameObject.GetComponentInParent<Building>().GetRepair(heal);
+
+           // SpriteRenderer f = new SpriteRenderer();
+           //int size =  otherCol.gameObject.transform.GetChildCount()-1;
+           // for (int i = 0; i < size; i++)
+           // {
+           //     otherCol.gameObject.transform.GetChild(i).GetComponent<SpriteRenderer>().color = Color.green;
+           // }
+           // otherCol.gameObject.GetComponent<Renderer>().material.color = Color.green;
 
            // otherCol.gameObject.GetComponentInParent<GameObject>().active=true;
         }

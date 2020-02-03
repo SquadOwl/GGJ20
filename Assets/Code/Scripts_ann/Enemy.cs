@@ -18,10 +18,10 @@ public class Enemy : MonoBehaviour
         {
             control = new ObjectControl(transform);
         }
-        //else if (type == 2)
-        //{
-        //    control = new PlayerControl(GetComponent<NavMeshAgent>(), transform);
-        //}
+        else if (type == 2)
+        {
+            control = new PlayerControl(GetComponent<NavMeshAgent>(), transform);
+        }
     }
 
 
