@@ -31,7 +31,11 @@ public class Support : MonoBehaviour
         {
             Debug.Log(otherCol.name + " Heal");
 
-            otherCol.gameObject.GetComponentInParent<Building>().GetRepair(heal);
+            if (otherCol.gameObject.GetComponentInParent<Building>() != null)
+            {
+
+                otherCol.gameObject.GetComponentInParent<Building>().GetRepair(heal);
+            }
 
            // SpriteRenderer f = new SpriteRenderer();
            //int size =  otherCol.gameObject.transform.GetChildCount()-1;
