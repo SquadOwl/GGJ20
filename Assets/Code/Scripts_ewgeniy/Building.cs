@@ -43,7 +43,7 @@ public class Building : MonoBehaviour
         Sprites = new List<Transform>();
         Figures = new List<Transform>();
 
-        my_state = null;
+        
 
         for (int i=0;i< gameObject.transform.GetChildCount();i++)
         {

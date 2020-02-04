@@ -6,7 +6,10 @@ public class Market : MonoBehaviour
 {
     public Sprite _destroy;
     public Sprite _fixed;
-  
+
+    public Sprite cros;
+    public Sprite galc;
+
 
     public float time;
     public float time_now;
@@ -36,13 +39,15 @@ public class Market : MonoBehaviour
 
     void Destroy()
     {
-        gameObject.GetComponent<SpriteRenderer>().sprite = _destroy;
+        gameObject.transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = cros;
+        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = _destroy;
         gameObject.active = true;
         time_now = 0;
     }
     void Fixed()
     {
-        gameObject.GetComponent<SpriteRenderer>().sprite = _fixed;
+        gameObject.transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = galc;
+        gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = _fixed;
         time_now = time;
 
     }
@@ -55,17 +60,21 @@ public class Market : MonoBehaviour
             transform.Rotate(new Vector3(0, 1, 0));
 
         }
+       
+
+        
+
+    }
+    void FixedUpdate()
+    {
         if (time_now > 0 && gameObject.active)
         {
-            time_now = time_now - step / Time.deltaTime;
+            time_now = time_now - step * Time.deltaTime;
             if (time_now < 0)
             {
                 gameObject.active = false;
             }
         }
-      
-
-        
 
     }
 }
