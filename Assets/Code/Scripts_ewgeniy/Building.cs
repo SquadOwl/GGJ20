@@ -11,8 +11,6 @@ public enum State_obj
 }
 public class Building : MonoBehaviour
 {
-    public Sprite _destroy;
-   public Sprite _fixed;
 
     public Market my_state;
     public  State_obj _my_state;
@@ -40,7 +38,7 @@ public class Building : MonoBehaviour
 
     public void Start()
     {
-        my_state = new Market(0, 2, 0, transform, _destroy, _fixed,3f,0.1f);
+
         _my_state = State_obj.Destroy;
         Sprites = new List<Transform>();
         Figures = new List<Transform>();
