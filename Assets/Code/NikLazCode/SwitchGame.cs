@@ -5,25 +5,33 @@ using UnityEngine.UI;
 
 public class SwitchGame : MonoBehaviour
 {
-    public GameObject ARCamera;
+  
     public GameObject MenuAll;
-    public GameObject ImageTarget;
+    public GameObject ARcamera;
+    public GameObject Camera;
     public GameObject MainMusic;
     public GameObject MenuPanel;
     public bool IsPause;
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.GetComponent<Button>().onClick.AddListener(delegate {
-
-            ARCamera.SetActive(!IsPause);
-            MenuAll.SetActive(!IsPause);
-            ImageTarget.SetActive(!IsPause);
-            MainMusic.SetActive(!IsPause);
-            MenuPanel.SetActive(IsPause);
-
-        });
+       
     }
+
+    public void Pause()
+    {
+        Debug.Log(IsPause);
+        
+        MenuAll.active = IsPause;
+ 
+        MainMusic.active = IsPause;
+        ARcamera.active = IsPause;
+        Camera.active = !IsPause;
+        MenuPanel.active = !IsPause;
+
+        IsPause = !IsPause;
+    }
+
 
     // Update is called once per frame
     void Update()

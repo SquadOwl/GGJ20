@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Exit : MonoBehaviour
 {
-   public GameObject popup;
+    public GameObject menu;
+    public GameObject popup;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +16,8 @@ public class Exit : MonoBehaviour
     // Update is called once per frame
     public void Exit_is()
     {
+        if (menu != null)
+            menu.active = false;
         popup.gameObject.active = true;
     }
 
@@ -24,8 +28,17 @@ public class Exit : MonoBehaviour
         //System.Diagnostics.Process.GetCurrentProcess().Kill();
     }
 
+
+    public void BackMenu()
+    {
+        Debug.Log("Menu");
+        SceneManager.LoadScene(0);
+    }
+
     public void No()
     {
+        if (menu != null)
+            menu.active = true;
         popup.gameObject.active = false;
     }
 }

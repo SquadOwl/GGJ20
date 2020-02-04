@@ -13,6 +13,8 @@ public class TimerBar : MonoBehaviour
     public Image img;
     public SpriteRenderer sr;
 
+    public SwitchGame game;
+
     private bool isGameEnd;
     private bool isTimerPaused;
 
@@ -27,7 +29,7 @@ public class TimerBar : MonoBehaviour
     void Update()
     {
         img.fillAmount = time / startTime;
-        if(sr.enabled)
+        if(sr.enabled && !game.IsPause)
         {
             Debug.Log(time);
             time -= Time.deltaTime;
