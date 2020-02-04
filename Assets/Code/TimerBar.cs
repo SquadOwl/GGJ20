@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TimerBar : MonoBehaviour
@@ -10,28 +11,34 @@ public class TimerBar : MonoBehaviour
     public float time;
 
     public Image img;
+    public SpriteRenderer sr;
 
     private bool isGameEnd;
+    private bool isTimerPaused;
 
     private void Start()
     {
         time = startTime;
+        
     }
+    
+
 
     void Update()
     {
         img.fillAmount = time / startTime;
-        time -= Time.deltaTime;
+        if(sr.enabled)
+        {
+            Debug.Log(time);
+            time -= Time.deltaTime;
+        }
         if(time <= 0 && !isGameEnd)
         {
             isGameEnd = true;
             SoundManager.Instance.Play("LoseSound");
-            Quit();
+
+            SceneManager.LoadScene(0);
         }
     }
 
-    private void Quit()
-    {
-        Application.Quit();
-    }
 }
