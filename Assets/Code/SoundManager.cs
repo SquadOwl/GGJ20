@@ -60,7 +60,6 @@ public class SoundManager : Singleton<SoundManager>
 
     public void ChangeMusicVolume(float value)
     {
-        Debug.Log("vol is: " + value);
         foreach (Sound s in sounds)
         {
             if(s.isMusic)
