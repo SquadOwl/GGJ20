@@ -21,7 +21,7 @@ public class Exit : MonoBehaviour
     {
         Debug.Log("EXIT");
         Application.Quit();
-        System.Diagnostics.Process.GetCurrentProcess().Kill();
+        //System.Diagnostics.Process.GetCurrentProcess().Kill();
     }
 
     public void No()

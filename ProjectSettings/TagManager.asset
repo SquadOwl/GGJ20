@@ -8,6 +8,7 @@ TagManager:
   - Terrain
   - Build
   - Wall
+  - mainCanvas
   layers:
   - Default
   - TransparentFX
