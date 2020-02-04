@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8989677491592354991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8989677491592354989}
+  - component: {fileID: 8989677491592354990}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8989677491592354989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8989677491592354991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8989677491592354990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8989677491592354991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 018bf979b30d08a488b982558c4c18c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Intro
+    clip: {fileID: 8300000, guid: fec03eee33976fd4e85fae6eeb96b3c0, type: 3}
+    source: {fileID: 0}
+    isMusic: 1
+  - name: Soundtrack
+    clip: {fileID: 8300000, guid: 1155b0078b8630f4cac961a08da6e277, type: 3}
+    source: {fileID: 0}
+    isMusic: 1
+  - name: LoseSound
+    clip: {fileID: 8300000, guid: a53fd838b78fbed40bcae5fa13dc6b23, type: 3}
+    source: {fileID: 0}
+    isMusic: 0
+  - name: WinSound
+    clip: {fileID: 8300000, guid: 70b9e2b7632f2ed478f1b0a8de30f66c, type: 3}
+    source: {fileID: 0}
+    isMusic: 0
+  - name: RepairSound
+    clip: {fileID: 8300000, guid: 9f9769e59cbbef94a8868ecc290c5b99, type: 3}
+    source: {fileID: 0}
+    isMusic: 0
