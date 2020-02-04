@@ -25,7 +25,7 @@ public class TimerBar : MonoBehaviour
         if(time <= 0 && !isGameEnd)
         {
             isGameEnd = true;
-            SoundManager.Instance.PlayLose();
+            SoundManager.Instance.Play("LoseSound");
             Quit();
         }
     }
