@@ -8,8 +8,8 @@ public class Breakable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        life = new Life(3.0f);
-        Breakables.Instance.breakablesList.Add(this);
+     //   life = new Life(3.0f);
+      //  Breakables.Instance.breakablesList.Add(this);
     }
 
     private bool isLife()

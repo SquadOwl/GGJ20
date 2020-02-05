@@ -21,13 +21,16 @@ public class SwitchGame : MonoBehaviour
     public void Pause()
     {
         Debug.Log(IsPause);
-        
+        if(MenuAll!=null)
         MenuAll.active = IsPause;
- 
-        MainMusic.active = IsPause;
-        ARcamera.active = IsPause;
-        Camera.active = !IsPause;
-        MenuPanel.active = !IsPause;
+        if (MainMusic != null)
+            MainMusic.active = IsPause;
+        if (ARcamera != null)
+            ARcamera.active = IsPause;
+        if (Camera != null)
+            Camera.active = !IsPause;
+        if (MenuPanel != null)
+            MenuPanel.active = !IsPause;
 
         IsPause = !IsPause;
     }

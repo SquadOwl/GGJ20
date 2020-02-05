@@ -28,14 +28,16 @@ public class SoundManager : Singleton<SoundManager>
                 s.source.volume = PlayerPrefs.GetFloat("SoundsVolume", 1);
             }
         }
+       
 
-
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().name == "MenuScene")
         {
+          
             Play("Intro");
         }
         else
         {
+            
             Play("Soundtrack");
         }
     }
@@ -45,6 +47,7 @@ public class SoundManager : Singleton<SoundManager>
     {
         foreach (Sound s in sounds)
         {
+            
             if (s.name == name) s.source.Play();
         }
 

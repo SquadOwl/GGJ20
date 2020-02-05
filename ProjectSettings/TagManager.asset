@@ -9,6 +9,8 @@ TagManager:
   - Build
   - Wall
   - mainCanvas
+  - Building
+  - Board
   layers:
   - Default
   - TransparentFX

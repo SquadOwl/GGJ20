@@ -8,6 +8,9 @@ public class Board : MonoBehaviour
 
     private int boardHealth;
 
+    public int FULLboardHealth;
+
+    public GameObject _time;
     public List<Building> buildings;
 
     public int GetBoardHealth()
@@ -27,13 +30,32 @@ public class Board : MonoBehaviour
                 Debug.Log(building.GetHealth());
             }
         }
+
+        foreach (var obj in buildings)
+        {
+            FULLboardHealth += obj.repairedHealth;
+        }
+    }
+
+    public void RepairBuild()
+    {
+        boardHealth = 0;
+        foreach (var obj in buildings)
+        {
+            boardHealth += obj.GetHealth();
+        }
+        Debug.Log("boardHealth=" + boardHealth);
+
+        if(FULLboardHealth== boardHealth)
+        {
+            _time.GetComponent<TimerBar>().isGameWin=true;
+        }
+
     }
 
     public void Update()
     {
-        foreach(var obj in buildings)
-        {
-            boardHealth += obj.GetHealth();
-        }
+       
+
     }
 }

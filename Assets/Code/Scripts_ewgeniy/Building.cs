@@ -15,7 +15,7 @@ public class Building : MonoBehaviour
     public Market my_state;
     public  State_obj _my_state;
 
-    public int health = 0;
+    public int health;
 
     public int repairedHealth;
 
@@ -54,12 +54,12 @@ public class Building : MonoBehaviour
     
         for(int i=0; i<Figures.Count;i++)
         {
-            Debug.Log(i);
+           
          
              
                 for (int y = 0; y < Figures[i].transform.GetChildCount(); y++)
                 {
-                Debug.Log("sprite");
+               
                 
                     Sprites.Add(Figures[i].transform.GetChild(y));
                     
@@ -79,12 +79,15 @@ public class Building : MonoBehaviour
 
     public void GetRepair(int count)
     {
-        health += count;
-
-        Repair();
-        if (health >= repairedHealth)
+        if (health != repairedHealth)
         {
-            isRepaired = true;
+            health += count;
+
+            Repair();
+            if (health >= repairedHealth)
+            {
+                isRepaired = true;
+            }
         }
     }
 
@@ -172,6 +175,8 @@ public class Building : MonoBehaviour
                     Sprites[i].gameObject.active = true;
 
                 }
+
+                GameObject.FindGameObjectWithTag("Board").GetComponent<Board>().RepairBuild();
 
                 break;
         }
